@@ -1,4 +1,4 @@
-package entitites;
+package produit.modele;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -9,7 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 
-public class Produit implements Serializable {
+public class Produit {
 
 	
 	@Id
@@ -34,5 +34,12 @@ public class Produit implements Serializable {
 	public void setLibelle(String libelle) {
 		this.libelle = libelle;
 	}
+
+	public Produit(String libelle) {
+		super();
+		this.libelle = libelle;
+	}
+	
+	
    
 }
